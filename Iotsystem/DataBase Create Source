@@ -1,0 +1,20 @@
+create database opensource;
+
+use opensource;
+
+create table sensorList(
+   sensor VARCHAR(15),
+   name VARCHAR(15),
+   id INT PRIMARY KEY,
+   count INT,
+   average DOUBLE
+);
+
+insert into sensorList values("sensor1","temp",1,0,0.0);
+
+create table sensor1(
+   time VARCHAR(30),
+   value DOUBLE,
+   idx INT
+);
+
